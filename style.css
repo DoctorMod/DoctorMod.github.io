@@ -1,4 +1,35 @@
 html {
-  font-family: helvetica, arial, sans-serif;
-  background-color: #666;
+  font-family: sans-serif;
+}
+
+#Header ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #333;
+}
+
+#Header li {
+  float: left;
+}
+#Header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#Header li a:hover {
+  background-color: black;
+}
+
+#Header .selected {
+  background-color: #009898;
+}
+
+#Header .selected a:hover {
+  background-color: #009898;
+  cursor: default;
 }
