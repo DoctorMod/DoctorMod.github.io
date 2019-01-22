@@ -8,6 +8,8 @@ html {
   padding: 0;
   overflow: auto;
   background-color: #333;
+  position: fixed;
+  width: 100%;
 }
 
 #Header li {
@@ -32,4 +34,36 @@ html {
 #Header .selected a:hover {
   background-color: #009898;
   cursor: default;
+}
+
+#Header #HeadImg {
+  background-image: url("Banner.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+#Content .boxSmall {
+  width: 20%;
+  height: 200px;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #eee;
+  border-radius: 3%;
+  float:left
+}
+
+#Content .boxBig {
+  width: 70%;
+  height: 200px;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #eee;
+  border-radius: 3%;
+  float:right
 }
