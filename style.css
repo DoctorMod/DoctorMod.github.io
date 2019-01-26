@@ -1,5 +1,7 @@
 html {
   font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 #Header ul{
@@ -66,4 +68,17 @@ html {
   background-color: #eee;
   border-radius: 3%;
   float:right
+}
+
+#divider {
+    clear: both;
+    margin: 5px;
+}
+
+#Footer {
+  padding: 20px;
+  text-align: right;
+  float: right;
+  width: 100%;
+  background-color: #00CA00;
 }
