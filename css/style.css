@@ -1,0 +1,119 @@
+body {
+  font: 15px/1.5 arial, helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.Dark {
+  padding: 15px;
+  background: #35424A;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header {
+  background-color: #35424A;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #00CA00 3px solid;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float:left;
+  display: inline;
+  padding: 0 20px;
+}
+
+header #bar {
+  float:left;
+}
+
+header #bar h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .colored, header .selected a {
+  color: #00CA00
+}
+
+header a:hover {
+  color: #ccc;
+  font-weight: bold;
+}
+
+#Paralax {
+  min-height: 400px;
+  background: url("../img/banner.png") no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+#Paralax h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#Paralax p {
+  font-size: 20px;
+}
+
+#Top {
+  margin-top: 20px;
+}
+
+#Top .item {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#Top .item img {
+  width: 90px;
+}
+
+article#Main {
+  float: left;
+  width: 64%;
+}
+
+aside#sidebar {
+  float:right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #00CA00;
+  text-align: center;
+}
