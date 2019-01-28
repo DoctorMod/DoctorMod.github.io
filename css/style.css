@@ -33,6 +33,10 @@ ul{
   cursor: pointer;
 }
 
+.disabled {
+  cursor: not-allowed;
+}
+
 a{
   color: #00CA00;
 }
@@ -106,6 +110,11 @@ header a:hover {
   width: 30%;
   padding: 10px;
   text-align: center;
+}
+
+#Top .item a {
+  text-decoration: none;
+  color: #000;
 }
 
 #Top .item img {
