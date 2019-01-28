@@ -33,6 +33,10 @@ ul{
   cursor: pointer;
 }
 
+a{
+  color: #00CA00;
+}
+
 header {
   background-color: #35424A;
   color: #fff;
@@ -119,11 +123,6 @@ aside#sidebar {
   margin-top: 10px;
 }
 
-aside#sidebar .job input, aside#sidebar .job textarea {
-  width: 90%;
-  padding: 5px;
-}
-
 ul#Code li{
   list-style: none;
   padding: 20px;
@@ -158,15 +157,5 @@ footer {
 
   #Paralax h1 {
     margin-top: 40px;
-  }
-
-  .job button {
-    width: 100%;
-    display: block;
-  }
-
-  .job input, .job textarea {
-    width: 100%;
-    margin-bottom: 5px;
   }
 }
