@@ -24,6 +24,15 @@ ul{
   margin-bottom: 10px;
 }
 
+.button_1 {
+  height: 38px;
+  background: #00CA00;
+  border: 0;
+  padding: 0 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
 header {
   background-color: #35424A;
   color: #fff;
@@ -110,10 +119,54 @@ aside#sidebar {
   margin-top: 10px;
 }
 
+aside#sidebar .job input, aside#sidebar .job textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+ul#Code li{
+  list-style: none;
+  padding: 20px;
+  border: #ccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
 footer {
   padding: 20px;
   margin-top: 20px;
   color: #fff;
   background-color: #00CA00;
   text-align: center;
+}
+
+@media(max-width: 768px) {
+  header #bar,
+   header nav,
+  header nav li,
+  #Top .item,
+  article#Main,
+  aside#sidebar {
+    float:none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #Paralax h1 {
+    margin-top: 40px;
+  }
+
+  .job button {
+    width: 100%;
+    display: block;
+  }
+
+  .job input, .job textarea {
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
