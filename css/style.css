@@ -148,7 +148,7 @@ footer {
   text-align: center;
 }
 
-@media only screen or (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
   header #bar,
    header nav,
   header nav li,
