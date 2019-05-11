@@ -11,7 +11,7 @@ body {
   overflow: hidden;
 }
 
-ul{
+ul {
   margin: 0;
   padding: 0;
 }
@@ -25,10 +25,12 @@ ul{
 }
 
 .button_1 {
-  height: 38px;
+  height: 48px;
   background: #00CA00;
   border: 0;
   padding: 0 20px;
+  border-radius: 4px;
+  text-align: center;
   color: #fff;
   cursor: pointer;
 }
@@ -37,7 +39,7 @@ ul{
   cursor: not-allowed;
 }
 
-a{
+a {
   color: #00CA00;
 }
 
@@ -57,13 +59,13 @@ header a {
 }
 
 header li {
-  float:left;
+  float: left;
   display: inline;
   padding: 0 20px;
 }
 
 header #bar {
-  float:left;
+  float: left;
 }
 
 header #bar h1 {
@@ -105,19 +107,19 @@ header a:hover {
   margin-top: 20px;
 }
 
-#Top .item {
+.item {
   float: left;
   width: 30%;
   padding: 10px;
   text-align: center;
 }
 
-#Top .item a {
+.item a {
   text-decoration: none;
   color: #000;
 }
 
-#Top .item img {
+.item img {
   width: 90px;
 }
 
@@ -127,12 +129,12 @@ article#Main {
 }
 
 aside#sidebar {
-  float:right;
+  float: right;
   width: 30%;
   margin-top: 10px;
 }
 
-ul#Code li{
+ul#Code li {
   list-style: none;
   padding: 20px;
   border: #ccc solid 1px;
@@ -151,12 +153,12 @@ footer {
 @media only screen and (max-device-width: 480px) {
 
   header #bar,
-   header nav,
+  header nav,
   header nav li,
   #Top .item,
   article#Main,
   aside#sidebar {
-    float:none;
+    float: none;
     text-align: center;
     width: 100%;
   }
@@ -172,22 +174,22 @@ footer {
 
 @media(max-width: 768px) {
 
-    header #bar,
-     header nav,
-    header nav li,
-    #Top .item,
-    article#Main,
-    aside#sidebar {
-      float:none;
-      text-align: center;
-      width: 100%;
-    }
+  header #bar,
+  header nav,
+  header nav li,
+  #Top .item,
+  article#Main,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
 
-    header {
-      padding-bottom: 20px;
-    }
+  header {
+    padding-bottom: 20px;
+  }
 
-    #Paralax h1 {
-      margin-top: 40px;
-    }
+  #Paralax h1 {
+    margin-top: 40px;
+  }
 }
