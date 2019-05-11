@@ -183,6 +183,10 @@ footer {
   padding: 10px;
 }
 
+#WebAndGame li {
+  list-style-type: none;
+}
+
 #WebAndGame .smallImage {
   width: 100%;
 }
