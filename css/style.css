@@ -3,6 +3,19 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f4f4f4;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 200px;
+}
+
+html {
+  height: 100%;
 }
 
 .container {
@@ -18,7 +31,7 @@ ul {
 
 .Dark {
   padding: 15px;
-  background: #35424A;
+  background: #6C7A89;
   color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -31,7 +44,7 @@ ul {
 
 .button_1 {
   height: 48px;
-  background: #00CA00;
+  background: #22A7F0;
   border: 0;
   padding: 0 20px;
   border-radius: 4px;
@@ -45,15 +58,15 @@ ul {
 }
 
 a {
-  color: #00CA00;
+  color: #22A7F0;
 }
 
 header {
-  background-color: #35424A;
+  background-color: #6C7A89;
   color: #fff;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: #00CA00 3px solid;
+  border-bottom: #22A7F0 3px solid;
 }
 
 header a {
@@ -83,7 +96,7 @@ header nav {
 }
 
 header .colored, header .selected a {
-  color: #00CA00
+  color: #22A7F0
 }
 
 header a:hover {
@@ -114,7 +127,7 @@ header a:hover {
 
 .item {
   float: left;
-  width: 30%;
+  width: 32%;
   padding: 10px;
   text-align: center;
 }
@@ -150,8 +163,12 @@ ul#Code li {
 footer {
   padding: 20px;
   margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
   color: #fff;
-  background-color: #00CA00;
+  background-color: #22A7F0;
   text-align: center;
 }
 
