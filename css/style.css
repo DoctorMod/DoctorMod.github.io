@@ -208,6 +208,7 @@ footer {
   header nav,
   header nav li,
   #Top .item,
+  #WebAndGame .ItemBox,
   article#Main,
   aside#sidebar {
     float: none;
