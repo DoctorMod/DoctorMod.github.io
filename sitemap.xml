@@ -15,7 +15,7 @@
 <url>
   <loc>http://doctormod.sytes.net/about</loc>
   <lastmod>2019-03-13T01:22:21+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>http://doctormod.sytes.net/code</loc>
@@ -23,7 +23,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://doctormod.sytes.net/HammerThrow/</loc>
+  <loc>http://doctormod.sytes.net/Referal/</loc>
   <lastmod>2019-03-13T01:22:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
