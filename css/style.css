@@ -24,6 +24,11 @@ ul {
   margin-bottom: 10px;
 }
 
+.HiddenA {
+  text-decoration: none;
+  color: inherit;
+}
+
 .button_1 {
   height: 48px;
   background: #00CA00;
@@ -170,6 +175,27 @@ footer {
   #Paralax h1 {
     margin-top: 40px;
   }
+}
+
+#WebAndGame .ItemBox {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+#WebAndGame .smallImage {
+  width: 100%;
+}
+
+#WebAndGame .ItemBox .Title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#WebAndGame .ItemBox .SmallCaps {
+  font-size: 13px;
+  font-weight: lighter;
+  color: #909090;
 }
 
 @media(max-width: 768px) {
