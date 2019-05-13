@@ -70,11 +70,11 @@
 				for (var c = 0; c < document.getElementById('N2').value.length; c++) {
 					var N2Ascci = N2Ascci + document.getElementById('N2').value.charCodeAt(c);
 				}
-				if (N1Ascii < 122 && N1Ascii > 97) {
-					N1Ascii = N1Ascii - 32	
+				if (N1Ascci < 122 && N1Ascci > 97) {
+					N1Ascci = N1Ascci - 32	
 				}
-				if (N2Ascii < 122 && N2Ascii > 97) {
-					N2Ascii = N2Ascii - 32	
+				if (N2Ascci < 122 && N2Ascci > 97) {
+					N2Ascci = N2Ascci - 32	
 				}
 				var Percent = (N1Ascci + N1Ascci + N2Ascci + N2Ascci) * 9;
 				while (100 < Percent) {
