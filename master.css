@@ -1,0 +1,28 @@
+#WebAndGame .ItemBox {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+#WebAndGame li {
+  list-style-type: none;
+}
+
+#WebAndGame .smallImage {
+  width: 100%;
+}
+
+#WebAndGame .ItemBox .Title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#WebAndGame .ItemBox .SmallCaps {
+  font-size: 13px;
+  font-weight: lighter;
+  color: #909090;
+}
+
+.clearall {
+  clear: both;
+}

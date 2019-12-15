@@ -2,52 +2,70 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Code Dump, Games, Coding, Unity, David Golding, DoctorMod" />
-  <meta name="description" content="I am David, and I program. I may still go to school, but that doesn't mean i can't still make a good website or two. I find that in programing i find the backend parts much easier. I don't feel i can do justice to design even if i try. I feel one of the the best things i have learned is that i don't need to do everything by myself. My skill in JavaScript really helped along in creating my first project, Orbit Newtab. I worked on it with one of close friends and feel it deserves to be somewhere in this place." />
-  <meta name="author" content="Doctor_Mod" />
-  <title>Doctor_Mod's Code Dump | About</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="master.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoctorMod's Code Dump</title>
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div id="bar">
-        <h1><span class="colored">Doctor_Mod's</span> Code Dump</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li class="selected"><a href="about">About</a></li>
-          <li><a href="code">Code</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" alt="Logo" style="width:40px; border-radius:100%;">
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="./">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="code">Code</a>
+      </li>
+    </ul>
 
-  <section id="Main">
+  </nav>
+  <div class="bg-secondary" style="width:100%;">
     <div class="container">
-      <article id="Main">
-        <h1 class="Page-title">About Me</h1>
-        <p>
-          I am David, and I program. I may still go to school, but that doesn't mean I can't still make a good website or two. I find that in programming i find the backend parts much easier. I don't feel I can do justice to design even if I try. I feel one of the best things I have learned is that I don't need to do everything by myself. My skill in JavaScript helped along in creating my first project,
-          <a href="orbitelite.github.io/get.html">Orbit Newtab</a>. I worked on it with one of my close friends and feel it deserves to be somewhere in this place.
-        </p>
-        <img src="img/DoctorMod.png" width="20%">
-      </article>
-      <aside id="sidebar">
-        <div class="Dark">
-          <h1>What I Do</h1>
+      <div class=" row" style="height:100px;">
+
+      </div>
+      <div class="row">
+        <div class="media border col-8 p-3 bg-light">
+          <img src="img/logo.png" alt="Logo" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+          <div class="media-body">
+            <h4>DoctorMod</h4>
+            <p>I am David, and I program. I may still go to school, but that doesn't mean I can't still make a good website or two. I find that in programming i find the backend parts much easier. I don't feel I can do justice to design even if I
+              try.
+              I
+              feel one of the best things I have learned is that I don't need to do everything by myself. My skill in JavaScript helped along in creating my first project, Orbit Newtab. I worked on it with one of my close friends and feel it deserves
+              to
+              be somewhere in this place.</p>
+          </div>
+        </div>
+        <div class="col-1">
+
+        </div>
+        <div class="border col-3 p-3 text-right bg-light">
+          <h4>What I Do</h4>
           <p>I make games, websites and other small programs. I know C# (For Unity), Quite Basic Python, HTML, CSS and JavaScript.</p>
         </div>
-      </aside>
+
+      </div>
+      <div class="row" style="height:100px;">
+
+      </div>
     </div>
-  </section>
-  <footer>
-    <p>Doctor_Mod, <a href="LICENSE.TXT" class="HiddenA">Copyright GPL-3.0 &copy; 2019</a>.</p>
-  </footer>
+  </div>
+  <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
+    <p><a style="color:#212529" href="privacy-policy.html">Privacy Policy</a> | <a style="color:#212529" href="mailto:doctormod10@gmail.com">DoctorMod10@gmail.com</a> | <a style="color:#212529" href="Sitemap.xml">Sitemap</a> | &copy; 2020 DoctorMod
+    </p>
+  </div>
 </body>
 
 </html>

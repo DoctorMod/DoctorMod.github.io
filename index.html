@@ -2,71 +2,81 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <meta charset="utf-8">
-  <meta name="keywords" content="Code Dump, Games, Coding, Unity, David, Golding, David Golding, DoctorMod, Doctor_Mod, Doctor Mod" />
-  <meta name="google-site-verification" content="LKwJxdsPJEZ22MvNtVuEm01cTDVBMaYOMl9jRwTzcEw" />
-  <meta name="description" content="I am David, and I program. I may still go to school, but that doesn't mean i can't still make a good website or two. I find that in programing i find the backend parts much easier. I don't feel i can do justice to design even if i try. I feel one of the the best things i have learned is that i don't need to do everything by myself. My skill in JavaScript really helped along in creating my first project, Orbit Newtab. I worked on it with one of close friends and feel it deserves to be somewhere in this place." />
-  <meta name="author" content="Doctor_Mod" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Doctor_Mod's Code Dump | Main Page</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="master.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoctorMod's Code Dump</title>
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div id="bar">
-        <h1><span class="colored">Doctor_Mod's</span> Code Dump</h1>
-      </div>
-      <nav>
-        <ul>
-          <li class="selected"><a href="/">Home</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="code">Code</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" alt="Logo" style="width:40px; border-radius:100%;">
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="code">Code</a>
+      </li>
+    </ul>
 
-  <section id="Paralax">
+  </nav>
+  <div class="jumbotron jumbotron-fluid" style="background-image:url('img/banner.jpg');">
     <div class="container">
-      <h1>My Junk</h1>
-      <p>I actually have no idea why you would ever be here, but ok. I have created games and websites that may or may not interest you, your choice really.</p>
+      <h1 class="display-1 text-center text-light">Doctor Mod's Code Dump</h1>
+      <p class="display-4 text-center text-light">Hi, I Make Games And Stuff.</p>
     </div>
-  </section>
-  <section id="Top">
-    <div class="container">
-      <div class="item">
-        <a href="HammerThrow/">
-          <img alt="Hammer Throw" src="./img/Duck Logo.png">
-          <h3>Hammer Throw</h3>
-          <p>It is a small game about throw a hammer at a watermelon, trying not to hit a duck. I see absolutely nothing wrong with that plot.</p>
-        </a>
+  </div>
+  <div class="Featured container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="text-center item">
+          <a style="color:#212529; text-decoration:none;" href="HammerThrow/">
+            <img width="90px" alt="Hammer Throw" src="./img/Duck Logo.png">
+            <h3>Hammer Throw</h3>
+            <p>It is a small game about throw a hammer at a watermelon, trying not to hit a duck. I see absolutely nothing wrong with that plot.</p>
+          </a>
+        </div>
       </div>
-      <div class="item Icenter">
-        <a href="https://orbitelite.github.io/get.html/">
-          <img alt="Orbit Logo" src="./img/orbit.png">
-          <h3>Orbit Newtab</h3>
-          <p>Give a clean and modern look to your default Chrome homepage. Replace new tab page with a personal dashboard featuring to-do, weather, and RSS feeds.</p>
-        </a>
+      <div class="col-sm-4">
+        <div class="text-center item">
+          <a style="color:#212529; text-decoration:none;" href="https://orbitprojects.github.io/everest">
+            <img width="90px" alt="Everest Logo" src="./img/everest.png">
+            <h3>The Everest Project</h3>
+            <p>Give a clean and modern look to your default Chrome homepage. All Your Favourite Features In A New Form Factor, Introducing Everest.</p>
+          </a>
+        </div>
       </div>
-      <div class="item disabled">
-        <img alt="Coming Soon!" src="./img/ScreenCheater.png">
-        <h3>ScreenCheater</h3>
-        <p>Ugh, another first person shooter? Wait, where is the other player? A Shooter, where everyone is invisible. Coming Soon!</p>
+      <div class="col-sm-4">
+        <div class="text-center item disabled">
+          <a style="color:#212529; text-decoration:none;" href="#">
+            <img width="90px" alt="ScreenCheater" src="./img/ScreenCheater.png">
+            <h3>ScreenCheater</h3>
+            <p>Ugh, another first person shooter? Wait, where is the other player? A Shooter, where everyone is invisible. Coming Soon!</p>
+          </a>
+        </div>
       </div>
     </div>
-  </section>
-  <section id="More">
-    <div class="container">
-      <form action="Referal">
-        <input class="button_1" type="submit" value="Read More"></input>
-      </form>
+    <div class="row">
+      <a class="mx-auto" href="code">
+        <button type="button" class="btn btn-primary mx-auto">See More</button>
+      </a>
     </div>
-  </section>
-  <footer>
-    <p>Doctor_Mod, <a href="LICENSE.TXT" class="HiddenA">Copyright GPL-3.0 &copy; 2019</a>.</p>
-  </footer>
+    <br />
+  </div>
+  <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
+    <p><a style="color:#212529" href="privacy-policy.html">Privacy Policy</a> | <a style="color:#212529" href="mailto:doctormod10@gmail.com">DoctorMod10@gmail.com</a> | <a style="color:#212529" href="Sitemap.xml">Sitemap</a> | &copy; 2020 DoctorMod
+    </p>
+  </div>
 </body>
 
 </html>

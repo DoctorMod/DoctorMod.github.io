@@ -2,58 +2,124 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Code Dump, Games, Coding, Unity, David Golding, DoctorMod" />
-  <meta name="description" content="I am David, and I program. I may still go to school, but that doesn't mean i can't still make a good website or two. I find that in programing i find the backend parts much easier. I don't feel i can do justice to design even if i try. I feel one of the the best things i have learned is that i don't need to do everything by myself. My skill in JavaScript really helped along in creating my first project, Orbit Newtab. I worked on it with one of close friends and feel it deserves to be somewhere in this place." />
-  <meta name="author" content="Doctor_Mod" />
-  <title>Doctor_Mod's Code Dump | Code</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="master.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoctorMod's Code Dump</title>
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div id="bar">
-        <h1><span class="colored">Doctor_Mod's</span> Code Dump</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="about">About</a></li>
-          <li class="selected"><a href="code">Coding</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" alt="Logo" style="width:40px; border-radius:100%;">
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="./">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Code</a>
+      </li>
+    </ul>
 
-  <section id="Main">
-    <div class="container">
-      <article id="Main">
-        <h1 class="Page-title">Coding</h1>
-        <ul id="Code">
-          <li>
-            <h3>Website</h3>
-            <p> Source Code For this site can be downloaded at this <a href="https://github.com/DoctorMod/DoctorMod.github.io">Github Repoistory</a>.
-            </p>
-          </li>
-          <li>
-            <h3>More</h3>
-            <p>My Top Games are visible on the <a href="">Homepage</a>, but my other games can be viewed <a href="Referal">here</a>.<p>
-          </li>
-        </ul>
-      </article>
-      <aside id="sidebar">
-        <div class="Dark">
-          <div id="More">
-            <p>The Games listed on this site are all on my <a href="https://github.com/DoctorMod">Github acount</a>.</p>
+  </nav>
+  <div class="container">
+    <br />
+    <h1 class="Page-title">Websites and games</h1>
+    <p>Below is a list of all my games and websites</p>
+    <ul id="WebAndGame">
+      <li>
+        <div class="ItemBox"><a style="color:#212529; text-decoration:none;" href="HammerThrow">
+            <img alt="Hammer Throw Demo" class="smallImage" src="img/HammerThrowDemo.jpg">
+            <span class="Title">Hammer Throw</span>
+            <br>
+            <span class="SmallCaps">Release Date: 4th Jan 2019</span>
+            <br>
+            <description>It is a small game about throw a hammer at a watermelon, trying not to hit a duck. I see absolutely nothing wrong with that plot.</description>
+          </a>
+          <div>
           </div>
-      </aside>
-    </div>
-  </section>
-  <footer>
-    <p>Doctor_Mod, <a href="LICENSE.TXT" class="HiddenA">Copyright GPL-3.0 &copy; 2019</a>.</p>
-  </footer>
+        </div>
+      </li>
+      <li>
+        <div class="ItemBox"><a style="color:#212529; text-decoration:none;" href="/">
+            <img alt="DoctorMod.sytes.net" class="smallImage" src="img/DoctorModSytesDemo.jpg">
+            <span class="Title">Doctormod.sytes.net</span>
+            <br>
+            <span class="SmallCaps">Release Date: 27th Jan 2019</span>
+            <br>
+            <description>I actually have no idea why you would ever be here, but ok. I have created games and websites that may or may not interest you, your choice really.</description>
+          </a>
+          <div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="ItemBox"><a style="color:#212529; text-decoration:none;" href="https://orbitelite.github.io/get.html">
+            <img alt="Orbit Newtab Demo" class="smallImage" src="img/OrbitNewtabDemo.jpg">
+            <span class="Title">Orbit Newtab</span>
+            <br>
+            <span class="SmallCaps">Release Date: 15th Jan 2019</span>
+            <br>
+            <description>Give a clean and modern look to your default Chrome homepage. Replace new tab page with a personal dashboard featuring to-do, weather, and RSS feeds.</description>
+          </a>
+          <div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="ItemBox"><a style="color:#212529; text-decoration:none;" href="/Junk/LoveTester.html">
+            <img alt="Love Tester Demo" class="smallImage" src="img/LoveTesterDemo.jpg">
+            <span class="Title">Love Tester</span>
+            <br>
+            <span class="SmallCaps">Release Date: 11th May 2019</span>
+            <br>
+            <description>Work Out who the love of your life is using a very simple love tester. You put two names in and one number comes out, your 'Compatibility' rating.</description>
+          </a>
+          <div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="ItemBox"><a style="color:#212529; text-decoration:none;" href="/Junk/Guidelines.html">
+            <img alt="Firewall Bypass" class="smallImage" src="img/guidelines.jpg">
+            <span class="Title">Firewall Bypass</span>
+            <br>
+            <span class="SmallCaps">Release Date: 28th August 2019</span>
+            <br>
+            <description>This is my guide on how to get past the school internet security, firewall and more. I have many programs I have used over the years to get through, From Tor to Hex editors, I have decided to share my findings with you.
+            </description>
+          </a>
+          <div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="ItemBox"><a style="color:#212529; text-decoration:none;" href="https://orbitprojects.github.io/everest.html">
+            <img alt="Everest Example" class="smallImage" src="img/everestDemo.png">
+            <span class="Title">The Everest Project</span>
+            <br>
+            <span class="SmallCaps">Release Date: 23th December 2019</span>
+            <br>
+            <description>Give a clean and modern look to your default Chrome homepage. All Your Favourite Features In A New Form Factor, Introducing Everest.</description>
+          </a>
+          <div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="clearall jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
+    <p><a style="color:#212529" href="privacy-policy.html">Privacy Policy</a> | <a style="color:#212529" href="mailto:doctormod10@gmail.com">DoctorMod10@gmail.com</a> | <a style="color:#212529" href="Sitemap.xml">Sitemap</a> | &copy; 2020 DoctorMod
+    </p>
+  </div>
 </body>
 
 </html>
