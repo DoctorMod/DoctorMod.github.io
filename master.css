@@ -23,6 +23,18 @@
   color: #909090;
 }
 
-.clearall {
-  clear: both;
+@media only screen and (max-device-width: 480px) {
+  #WebAndGame .ItemBox {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media(max-width: 768px) {
+  #WebAndGame .ItemBox {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
 }
