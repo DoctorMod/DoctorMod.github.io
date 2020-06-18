@@ -1,40 +1,19 @@
-#WebAndGame .ItemBox {
-  float: left;
-  width: 30%;
-  padding: 10px;
+a:hover div {
+  	animation: scaleAnim .1s linear;
+	transform:scale(1.02);
 }
 
-#WebAndGame li {
-  list-style-type: none;
+@keyframes scaleAnim {
+  	from {transform:scale(1);}
+  	to {transform:scale(1.02);}
 }
 
-#WebAndGame .smallImage {
-  width: 100%;
+@keyframes scaleAnimDown {
+  	from {transform:scale(1.02);}
+  	to {transform:scale(1);}
 }
 
-#WebAndGame .ItemBox .Title {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-#WebAndGame .ItemBox .SmallCaps {
-  font-size: 13px;
-  font-weight: lighter;
-  color: #909090;
-}
-
-@media only screen and (max-device-width: 480px) {
-  #WebAndGame .ItemBox {
-    float: none;
-    text-align: center;
-    width: 100%;
-  }
-}
-
-@media(max-width: 768px) {
-  #WebAndGame .ItemBox {
-    float: none;
-    text-align: center;
-    width: 100%;
-  }
+a div {
+	animation: scaleAnimDown .1s linear;
+	transform:scale(1);
 }
