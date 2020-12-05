@@ -10,17 +10,17 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://doctormod.sytes.net/about</loc>
+  <loc>https://doctormod.sytes.net#about</loc>
   <lastmod>2019-03-13T01:22:21+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://doctormod.sytes.net/code</loc>
+  <loc>https://doctormod.sytes.net#code</loc>
   <lastmod>2019-03-13T01:22:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://doctormod.sytes.net/HammerThrow</loc>
+  <loc>https://doctormod.sytes.net/Demo/HammerThrow</loc>
   <lastmod>2019-03-13T01:22:21+00:00</lastmod>
   <priority>0.70</priority>
 </url>
