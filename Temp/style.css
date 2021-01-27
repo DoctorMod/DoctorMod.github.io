@@ -6,10 +6,9 @@ html, body {
 }
 
 .Logo {
-  width: 500px;
+  width: 33vh;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 h2, h1, p {
@@ -69,7 +68,7 @@ nav ul li a:hover {
 }
 
 .jumbotron {
-  height: 500px;
+  height: 40vh;
   background-image: url('Banner.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
