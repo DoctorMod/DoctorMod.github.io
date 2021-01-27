@@ -85,7 +85,9 @@ nav {
     height: 100vh;
 }
 
-#Code {}
+#Contact {
+    height: 100vh;
+}
 
 #timer {
     color: white;
