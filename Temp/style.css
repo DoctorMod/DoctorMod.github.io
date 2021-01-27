@@ -93,7 +93,6 @@ nav ul li a:hover {
 }
 
 .SeperatorText {
-  width: 49%;
   padding: 0 20px;
   border-left: 4px solid #00afec;
   display: inline-block;
@@ -130,15 +129,20 @@ nav ul li a:hover {
   article {
     border: none !important;
   }
+  .SeperatorBackground {
+    padding: 1em 0;
+  }
+  img {
+    width: 100%;
+    height: initial;
+  }
   .Row article {
     width: 100%;
     margin-bottom: 1em;
     text-align: center;
-    padding: 0 5em;
   }
   #aboutSep {
     clear: both;
-    height: 100px;
   }
   footer {
     margin-top: 10em;
@@ -152,11 +156,11 @@ nav ul li a:hover {
     margin: 0;
   }
   .Mobile {
-    display: initial !important;
+    display: block !important;
   }
   .toCenter {
     width: 45%;
-  padding: 0 20px;
-  display: inline-block;
+    padding: 0 20px;
+    display: inline-block;
   }
 }
