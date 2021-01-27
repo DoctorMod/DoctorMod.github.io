@@ -124,6 +124,11 @@ nav ul li a:hover {
   margin: 0;
 }
 
+.removeBullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 @media only screen and (max-width: 1000px) {
   article {
     border: none !important;
@@ -156,10 +161,5 @@ nav ul li a:hover {
   }
   .Mobile {
     display: block !important;
-  }
-  .toCenter {
-    width: 45%;
-    padding: 0 20px;
-    display: inline-block;
   }
 }
