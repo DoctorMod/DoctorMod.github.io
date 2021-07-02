@@ -1,5 +1,6 @@
 RiddleObj = {
     "Ashen Reaches": {
+
         "Buoy on the North East shores": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Buoy%20on%20the%20North%20East%20shores|-10565.25390625_10179.904296875",
         "Burning torch high to the North": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Burning%20torch%20high%20to%20the%20North|-10518.5_10120.25",
         "Cave of bones to the North": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Cave%20of%20bones%20to%20the%20North|-10549.669921875_10135.7314453125",
@@ -776,3 +777,5 @@ autoComplete(document.getElementById("islandPicker"), Islands);
 
 document.getElementById("islandPicker").addEventListener('input', checkIsland);
 document.getElementById("RiddleBox").addEventListener('input', checkRiddle);
+document.getElementById("islandPicker").addEventListener('change', checkIsland);
+document.getElementById("RiddleBox").addEventListener('change', checkRiddle);
