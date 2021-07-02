@@ -656,6 +656,8 @@ function autoComplete(inp, arr) {
                     /*close the list of autocompleted values,
                     (or any other open lists of autocompleted values:*/
                     closeAllLists();
+                    checkIsland();
+                    checkRiddle();
                 });
                 a.appendChild(b);
             }
@@ -740,8 +742,8 @@ function strSearch(str, strArray) {
     return output;
 }
 
-function checkIsland(inputBox) {
-    var ProcessedIslandInput = inputBox.target.value.toLowerCase().trim().replace(/[^\w\s]/gi, '');
+function checkIsland() {
+    var ProcessedIslandInput = document.getElementById("islandPicker").value.toLowerCase().trim().replace(/[^\w\s]/gi, '');
     SearchedIslands = strSearch(ProcessedIslandInput, Islands);
 
     riddleList = [];
@@ -761,8 +763,8 @@ function checkIsland(inputBox) {
     
 }
 
-function checkRiddle(riddleBox) {
-    ProcessedRiddleInput = riddleBox.target.value.toLowerCase().trim().replace(/[^\w\s]/gi, '');
+function checkRiddle() {
+    ProcessedRiddleInput = document.getElementById("RiddleBox").value.toLowerCase().trim().replace(/[^\w\s]/gi, '');
     SearchedRiddles = strSearch(ProcessedRiddleInput, riddleList);
     if (SearchedRiddles.length == riddleList.length) {
         document.getElementById("redirect").disabled = true;
@@ -777,5 +779,3 @@ autoComplete(document.getElementById("islandPicker"), Islands);
 
 document.getElementById("islandPicker").addEventListener('input', checkIsland);
 document.getElementById("RiddleBox").addEventListener('input', checkRiddle);
-document.getElementById("islandPicker").addEventListener('change', checkIsland);
-document.getElementById("RiddleBox").addEventListener('change', checkRiddle);
