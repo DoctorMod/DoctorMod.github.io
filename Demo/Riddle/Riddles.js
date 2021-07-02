@@ -59,7 +59,7 @@ RiddleObj = {
         "Water well to the South East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Water%20well%20to%20the%20South%20East|-5444.8955078125_2941.9296875",
         "Wooden bridge": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Wooden%20bridge|-5404.75390625_2880.7596435546875"
     },
-    "Crooks Hollow": {
+    "Crook’s Hollow": {
         "Cavern camp’s forgotten prisoner": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Cavern%20camp's%20forgotten%20prisoner|-7836.64453125_7021.6064453125",
         "Cavern campfire": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Cavern%20campfire|-7840.39453125_7024.1064453125",
         "Cavern entrance beneath the rickety bridge": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Cavern%20entrance%20beneath%20the%20rickety%20bridge|-7926.1689453125_7038.6279296875",
@@ -85,7 +85,7 @@ RiddleObj = {
         "Sunstone in the bay": "https://maps.seaofthieves.rarethief.com/index.html?marker=rock_painting|Rock%20Painting|Sunstone%20in%20the%20bay|-7854.9541015625_6990.73828125",
         "Watcher over the East sea": "https://maps.seaofthieves.rarethief.com/index.html?marker=rock_painting|Rock%20Painting|Watcher%20over%20the%20East%20sea|-7869.4541015625_7057.48828125"
     },
-    "Devils Ridge": {
+    "Devil’s Ridge": {
         "Ancient Kraken chamber": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Ancient%20Kraken%20chamber|-9175.5_8056.5",
         "Base of Devil’s Tears": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Base%20of%20Devil's%20Tears|-9169.25_8012.75",
         "Boulder crushed explorer": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Boulder%20crushed%20explorer|-9184_8045",
@@ -129,7 +129,7 @@ RiddleObj = {
         "Worship": "https://maps.seaofthieves.rarethief.com/index.html?marker=rock_painting|Rock%20Painting|Worship|-8242.15625_3790.462890625",
         "Wrath of the Siren in the heart of the island": "https://maps.seaofthieves.rarethief.com/index.html?marker=rock_painting|Rock%20Painting|Wrath%20of%20the%20Siren%20in%20the%20heart%20of%20the%20island|-8267.65625_3800.962890625"
     },
-    "Fetchers Rest": {
+    "Fetcher’s Rest": {
         "Broken jetty": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Broken%20jetty|-6477.904457092285_10212.066375732422",
         "Campfire to the North East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Campfire%20to%20the%20North%20East|-6430.888557434082_10295.167907714844",
         "Cook’s West abandoned cart": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Cook's%20West%20abandoned%20cart|-6440_10216.25",
@@ -175,7 +175,7 @@ RiddleObj = {
         "Three skull post to the North East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Three%20skull%20post%20to%20the%20North%20East|-7339.75_10657",
         "White flag near the South crystal pool": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|White%20flag%20near%20the%20South%20crystal%20pool|-7474.689453125_10586.435546875"
     },
-    "Krakens Fall": {
+    "Kraken’s Fall": {
         "Castaway’s camp to the East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Castaway's%20camp%20to%20the%20East|-6630.3896484375_8843.55078125",
         "Excavated treasure chest to the North East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Excavated%20treasure%20chest%20to%20the%20North%20East|-6618.6220703125_8813.099609375",
         "Highest tree": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Highest%20tree|-6682.8896484375_8792.05078125",
@@ -210,7 +210,7 @@ RiddleObj = {
         "Tip of the South beach": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Tip%20of%20the%20South%20beach|-4303.6884765625_5062.7216796875",
         "Watery chamber in the North coastal cave": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Watery%20chamber%20in%20the%20North%20coastal%20cave|-4165.489944458008_5027.80330657959"
     },
-    "Marauders Arch": {
+    "Marauder’s Arch": {
         "Anchor resting on the South West shore": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Anchor%20resting%20on%20the%20South%20West%20shore|-3276_8318.5",
         "Barrel cart in the smuggler’s camp": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Barrel%20cart%20in%20the%20smuggler's%20camp|-3165.58984375_8405.775390625",
         "Cursed skull shrine up high": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Cursed%20skull%20shrine%20up%20high|-3277.4365234375_8347.453125",
@@ -233,7 +233,7 @@ RiddleObj = {
         "Washed up buoy on the South West beach": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Washed%20up%20buoy%20on%20the%20South%20West%20beach|-3258.5_8335.75",
         "Weathered flagpole on the North West beach": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Weathered%20flagpole%20on%20the%20North%20West%20beach|-3177.2919921875_8344.763671875"
     },
-    "Mermaids Hideaway": {
+    "Mermaid’s Hideaway": {
         "Abandoned birdcage near Mermaid’s Lagoon": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Abandoned%20birdcage%20near%20Mermaid's%20Lagoon|-6903.5_2918.095703125",
         "Abandoned homesteads to the South": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Abandoned%20homesteads%20to%20the%20South|-6950.5_2919.75",
         "Anchored captive to the North East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Anchored%20captive%20to%20the%20North%20East|-6900.5_2943.345703125",
@@ -322,7 +322,7 @@ RiddleObj = {
         "Trumpeters in the shadow of the West peak": "https://maps.seaofthieves.rarethief.com/index.html?marker=rock_painting|Rock%20Painting|Trumpeters%20in%20the%20shadow%20of%20the%20West%20peak|-7902.6640625_4451.591796875",
         "Watcher": "https://maps.seaofthieves.rarethief.com/index.html?marker=rock_painting|Rock%20Painting|Watcher|-7987.12109375_4540.845703125"
     },
-    "Rubys Fall": {
+    "Ruby’s Fall": {
         "Bone tree on the North beach": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Bone%20tree%20on%20the%20North%20beach|-7935.0341796875_11385.044921875",
         "Campfire to the North East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Campfire%20to%20the%20North%20East|-7994.75_11359.25",
         "Crushed explorer to the North East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Crushed%20explorer%20to%20the%20North%20East|-7970.6279296875_11373.5732421875",
@@ -345,7 +345,7 @@ RiddleObj = {
         "Torch atop the South East rock": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Torch%20atop%20the%20South%20East%20rock|-8019.25_11395",
         "North East painted tale of three Skulls consumed by fire": "https://maps.seaofthieves.rarethief.com/index.html?marker=rock_painting|Rock%20Painting|North%20East%20painted%20tale%20of%20three%20Skulls%20consumed%20by%20fire|-7987_11370.5"
     },
-    "Sailors Bounty": {
+    "Sailor’s Bounty": {
         "Anchor resting on the ship’s remains to the far North East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Anchor%20resting%20on%20the%20ship's%20remains%20to%20the%20far%20North%20East|-3471.5830078125_3102.466796875",
         "Balancing rocks on the small island to the far North East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Balancing%20rocks%20on%20the%20small%20island%20to%20the%20far%20North%20East|-3532.697265625_3123.984375",
         "Camp": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Camp|-3610.2177734375_3032.3359375",
@@ -431,7 +431,7 @@ RiddleObj = {
         "Wrecked Rowboat on the South West shores": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Wrecked%20Rowboat%20on%20the%20South%20West%20shores|-5867.185546875_6861.8466796875",
         "Wrecked hull in the waters of the East coast": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Wrecked%20hull%20in%20the%20waters%20of%20the%20East%20coast|-5832.671875_6947.3740234375"
     },
-    "Smugglers Bay": {
+    "Smuggler’s Bay": {
         "Abandoned supplies at the beach landing point": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Abandoned%20supplies%20at%20the%20beach%20landing%20point|-3179.908203125_4125.2919921875",
         "Barrel maker’s grave to the West": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Barrel%20maker's%20grave%20to%20the%20West|-3188.5810546875_4068.1787109375",
         "Beach landing point": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Beach%20landing%20point|-3181.742805480957_4128.5096435546875",
@@ -504,7 +504,7 @@ RiddleObj = {
         "Tale of the storm painted on the North rocks": "https://maps.seaofthieves.rarethief.com/index.html?marker=rock_painting|Rock%20Painting|Tale%20of%20the%20storm%20painted%20on%20the%20North%20rocks|-6100.75390625_7688.6533203125",
         "Three painted tentacles": "https://maps.seaofthieves.rarethief.com/index.html?marker=rock_painting|Rock%20Painting|Three%20painted%20tentacles|-6154.75390625_7717.4033203125"
     },
-    "The Devils Thirst": {
+    "The Devil’s Thirst": {
         "Campfire to the North": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Campfire%20to%20the%20North|-9814_10744.25",
         "Jaws of legend to the North": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Jaws%20of%20legend%20to%20the%20North|-9803.48828125_10748.5869140625",
         "North hanging cage": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|North%20hanging%20cage|-9802.3505859375_10739.10546875",
@@ -542,7 +542,7 @@ RiddleObj = {
         "White flag to the North": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|White%20flag%20to%20the%20North|-4671.05859375_7869.7568359375",
         "Wrecked rowboat on the South sands": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Wrecked%20rowboat%20on%20the%20South%20sands|-4780.26171875_7893.802734375"
     },
-    "Thieves Haven": {
+    "Thieves’ Haven": {
         "Abandoned tipis up high to the North East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Abandoned%20tipis%20up%20high%20to%20the%20North%20East|-9329.1328125_6711.7265625",
         "Ancient diving plank": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Ancient%20diving%20plank|-9407.1328125_6667.2265625",
         "Beach survivor’s camp to the East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Beach%20survivor's%20camp%20to%20the%20East|-9355.3828125_6767.2265625",
@@ -588,7 +588,7 @@ RiddleObj = {
         "Turtle Rock up high to the East": "https://maps.seaofthieves.rarethief.com/index.html?marker=rock_painting|Rock%20Painting|Turtle%20Rock%20up%20high%20to%20the%20East|-9396.04296875_6726.7119140625",
         "Twin fish on the North beach": "https://maps.seaofthieves.rarethief.com/index.html?marker=rock_painting|Rock%20Painting|Twin%20fish%20on%20the%20North%20beach|-9294.6943359375_6664.8681640625"
     },
-    "Wanderers Refuge": {
+    "Wanderer’s Refuge": {
         "Collapsed stone remains on the South beach": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Collapsed%20stone%20remains%20on%20the%20South%20beach|-6772.75_4320",
         "Desolate wooden shack at the South beach": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Desolate%20wooden%20shack%20at%20the%20South%20beach|-6782.584846496582_4319.554092407227",
         "Grave adorned with rope to the South East": "https://maps.seaofthieves.rarethief.com/index.html?marker=landmark|Landmark|Grave%20adorned%20with%20rope%20to%20the%20South%20East|-6676.9638671875_4385.6806640625",
@@ -735,7 +735,7 @@ document.getElementById("redirect").disabled = true;
 function strSearch(str, strArray) {
     var output = [];
     for (var i = 0; i < strArray.length; i++) {
-        if (strArray[i].toLowerCase().match(str)) {
+        if (strArray[i].toLowerCase().trim().replace(/[^\w\s]/gi, '').match(str)) {
             output.push(strArray[i]);
         }
     }
