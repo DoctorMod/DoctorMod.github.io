@@ -102,10 +102,10 @@ window.addEventListener('scroll', function() {
 });
 
 function filterSave() {
-	filter.agemin != null ? document.getElementById("agemin").value = filter.agemin : '';
-	filter.agemax != null ? document.getElementById("agemax").value = filter.agemax : '';
-	filter.subject != null ? document.getElementById("subject").value = filter.subject : '';
-	filter.area != null ? document.getElementById("area").value = filter.area : '';
+	filter.agemin != '' && filter.agemin != null ? document.getElementById("agemin").value = filter.agemin : '';
+	filter.agemax != '' && filter.agemax != null ? document.getElementById("agemax").value = filter.agemax : '';
+	filter.subject != '' && filter.subject != null ? document.getElementById("subject").value = filter.subject : '';
+	filter.area != '' && filter.area != null ? document.getElementById("area").value = filter.area : '';
 	filter.gender != null && filter.gender != '' ? document.getElementById("g"+filter.gender).checked = true : '';
 	filter.qualification != null && filter.qualification != '' ? document.getElementById("q"+filter.qualification).checked = true : '';
 	filter.drive != null & filter.drive != '' ? document.getElementById("customSwitches").checked = true : '';
