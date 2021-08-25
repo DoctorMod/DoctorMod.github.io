@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        .ItemBox {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            margin: 1%;
+        }
+        
+		* {
+			font-family: montserrat,sans-serif;
+		}
+		
+        li {
+            list-style-type: none;
+        }
+        
+        .smallImage {
+            height: 100%;
+        }
+        
+        .ItemBox .Title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        
+        .ItemBox .SmallCaps {
+            font-size: 20px;
+            font-weight: lighter;
+            color: #909090;
+        }
+        
+        .HiddenA {
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+        
+        .imgContainer {
+            height: 30vh;
+        }
+        
+        #sidebar {
+            background: #909090;
+            color: #fff;
+            transition: all 0.3s;
+            min-width: 250px;
+            max-width: 250px;
+            min-height: 100vh;
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+		
+		
+		.fixed {
+			position: fixed;
+			top:0;
+        }
+		
+		#outerContain {
+			width:100%;
+		}
+		
+		.scrolled {
+			margin-left:250px;
+		}
+        
+        .marginSide {
+            margin-left: 0.3vw;
+        }
+        
+        .wrapper {
+            display: flex;
+            align-items: stretch;
+        }
+        
+        #sidebar.active {
+            margin-left: -250px;
+        }
+        
+        #sidebar .sidebar-header {
+            padding: 20px;
+            background: #909090;
+        }
+        
+        #sidebar ul.components {
+            padding: 20px 0;
+        }
+        
+        #sidebar ul p {
+            color: #fff;
+            padding: 10px;
+        }
+        
+        .age {
+            display: inline;
+            width: 36%;
+        }
+		
+		.hiddenA {
+			color:white;
+			transition: 0.3s color;
+			background-color: gray;
+		}
+		
+		.hiddenA.active {
+			background-color: darkgray !important;
+		}
+		
+		.hiddenA:hover {
+			color:darkgray;
+		}
+    </style>
+    <title>Find your Tutor</title>
+</head>
+
+<body>
+<nav>
+	<ul class="nav nav-pills nav-fill" style="color:#000;background-color:rgb(3, 50, 73);height:100px;">
+	<img src="img/logo.png" height=100px>
+  <li class="nav-item">
+    <a class="nav-link hiddenA" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link hiddenA" href="about.html">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active hiddenA" href="#">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link hiddenA" href="contact.html">Contact</a>
+  </li>
+</ul>
+</nav>
+
+    <div class="wrapper">
+        <nav id="sidebar">
+            <form>
+                <div class="text-center sidebar-header">
+                    <h3>Filters</h3>
+                </div>
+                <div class="text-center"><a href="find.html"><input type="button" value="Clear Filters"></a></div>
+                <div class="marginSide">
+                    <ul class="list-unstyled components">
+                        <h5>Gender</h5>
+                        <li><label><input id="gMale" type="radio" name="gender" value="Male"> Male</label></li>
+                        <li><label><input id="gFemale" type="radio" name="gender" value="Female"> Female</label></li>
+                        <li><button type="submit" name="gender" value="">Clear</button></li>
+                        <li><input type="submit" value="Go"></li>
+                    </ul>
+                    <ul class="list-unstyled components">
+                        <h5>Age</h5>
+                        <li class=""><input id="agemin" class="age" name="agemin" placeholder="Min"> <input id="agemax" class="age" name="agemax" placeholder="Max"> <input type="submit" value="Go"></li>
+                    </ul>
+                    <ul class="list-unstyled components">
+                        <h5>Subject</h5>
+                        <li class=""><input class="w-75" name="subject" placeholder="Subject Name"> <input type="submit" value="Go"></li>
+                    </ul>
+					<ul class="list-unstyled components">
+                        <h5>Area</h5>
+                        <li class=""><input class="w-75" name="area" placeholder="Location Name"> <input type="submit" value="Go"></li>
+                    </ul>
+                    <ul class="list-unstyled components">
+                        <h5>Qualification</h5>
+                        <li><label><input type="radio" name="qualification" value="Student"> Student</label></li>
+                        <li><label><input type="radio" name="qualification" value="University"> University</label></li>
+                        <li><label><input type="radio" name="qualification" value="Teacher"> Teacher</label></li>
+                        <li><label><input type="radio" name="qualification" value="Other"> Other</label></li>
+                        <li><input type="submit" value="Go"></li>
+                    </ul>
+                    <ul class="list-unstyled components">
+                        <h5>Avaliability</h5>
+                        <li><label><input type="checkbox" name="availability" value="Monday"> Monday</label></li>
+                        <li><label><input type="checkbox" name="availability" value="Tuesday"> Tuesday</label></li>
+                        <li><label><input type="checkbox" name="availability" value="Wednesday"> Wednesday</label></li>
+                        <li><label><input type="checkbox" name="availability" value="Thrusday"> Thrusday</label></li>
+                        <li><label><input type="checkbox" name="availability" value="Friday"> Friday</label></li>
+                        <li><label><input type="checkbox" name="availability" value="Saturday"> Saturday</label></li>
+                        <li><label><input type="checkbox" name="availability" value="Sunday"> Sunday</label></li>
+                        <li><input type="submit" value="Go"></li>
+                    </ul>
+                    <ul class="list-unstyled components">
+                        <h5>Can They Drive</h5>
+                        <li>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" name="drive" value="true" id="customSwitches">
+                                <label class="custom-control-label" for="customSwitches">Driver's License Required</label>
+                            </div>
+                        </li>
+                        <li><input type="submit" value="Go"></li>
+                    </ul>
+                </div>
+            </form>
+        </nav>
+		<div id="outerContain">
+			<div class="container">
+				<ul id="item">
+
+				</ul>
+			</div>
+		</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="tutors.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
