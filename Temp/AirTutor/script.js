@@ -76,7 +76,6 @@ users.forEach(element => {
                     element.age > filter[filterSearch] - 1 && filter[filterSearch] != '' ? accept = false : 'Continue Checks';
                     break;
                 case "availability":
-                    console.log(filter.availability + ", " + element.availability.value);
                     filter.availability.forEach(query => {
                         element.availability.value.includes(query) ? 'Continue Checks' : accept = false;
                     });
@@ -102,6 +101,17 @@ window.addEventListener('scroll', function() {
 	}
 });
 
-document.getElementById("g"+filter.gender).checked = true;
-document.getElementById("agemin").value = filter.agemin;
-document.getElementById("agemax").value = filter.agemax;
+function filterSave() {
+	filter.agemin != null ? document.getElementById("agemin").value = filter.agemin : '';
+	filter.agemax != null ? document.getElementById("agemax").value = filter.agemax : '';
+	filter.subject != null ? document.getElementById("subject").value = filter.subject : '';
+	filter.area != null ? document.getElementById("area").value = filter.area : '';
+	filter.gender != null && filter.gender != '' ? document.getElementById("g"+filter.gender).checked = true : '';
+	filter.qualification != null && filter.qualification != '' ? document.getElementById("q"+filter.qualification).checked = true : '';
+	filter.drive != null & filter.drive != '' ? document.getElementById("customSwitches").checked = true : '';
+	filter.availability.forEach(aEle => {
+		document.getElementById("a"+aEle).checked = true;
+	});
+}
+
+setTimeout(filterSave, 300);
