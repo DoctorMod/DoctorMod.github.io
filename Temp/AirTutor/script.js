@@ -24,7 +24,7 @@ function itemtemplate(user) {
     <li>
     <div class="ItemBox border text-center">
         <div class="imgContainer">
-        <img alt="Image of Tutor" class="smallImage" src="img/${user.image}">
+        <a href="mailto:${user.email}"><img alt="Image of Tutor" class="smallImage" src="img/${user.image}"></a>
         </div>
         <span class="Title">${user.name.last}</span>
         <br />
@@ -102,10 +102,10 @@ window.addEventListener('scroll', function() {
 });
 
 function filterSave() {
-	filter.agemin != '' && filter.agemin != null ? document.getElementById("agemin").value = filter.agemin : '';
-	filter.agemax != '' && filter.agemax != null ? document.getElementById("agemax").value = filter.agemax : '';
-	filter.subject != '' && filter.subject != null ? document.getElementById("subject").value = filter.subject : '';
-	filter.area != '' && filter.area != null ? document.getElementById("area").value = filter.area : '';
+	filter.agemin != null ? document.getElementById("agemin").value = filter.agemin : '';
+	filter.agemax != null ? document.getElementById("agemax").value = filter.agemax : '';
+	filter.subject != null ? document.getElementById("subject").value = filter.subject : '';
+	filter.area != null ? document.getElementById("area").value = filter.area : '';
 	filter.gender != null && filter.gender != '' ? document.getElementById("g"+filter.gender).checked = true : '';
 	filter.qualification != null && filter.qualification != '' ? document.getElementById("q"+filter.qualification).checked = true : '';
 	filter.drive != null & filter.drive != '' ? document.getElementById("customSwitches").checked = true : '';

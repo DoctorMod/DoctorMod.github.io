@@ -50,7 +50,7 @@
         }
         
         #sidebar {
-            background: #909090;
+            background: rgb(3, 50, 73);
             color: #fff;
             transition: all 0.3s;
             min-width: 250px;
@@ -89,8 +89,18 @@
         
         #sidebar .sidebar-header {
             padding: 20px;
-            background: #909090;
         }
+
+		::placeholder {
+		color:#333;
+		}
+
+		input[type=button],input[type=submit], input, button {
+			background-color:#8DD4DD;
+			border:none;
+			color:#333;
+			border-radius:2px;
+		}
         
         #sidebar ul.components {
             padding: 20px 0;
@@ -109,11 +119,10 @@
 		.hiddenA {
 			color:white;
 			transition: 0.3s color;
-			background-color: gray;
 		}
 		
 		.hiddenA.active {
-			background-color: darkgray !important;
+			background-color:#8DD4DD !important;
 		}
 		
 		.hiddenA:hover {
@@ -139,6 +148,9 @@
   <li class="nav-item">
     <a class="nav-link hiddenA" href="contact.html">Contact</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link hiddenA" href="signup.html">Sign Up</a>
+  </li>
 </ul>
 </nav>
 
@@ -154,7 +166,7 @@
                         <h5>Gender</h5>
                         <li><label><input id="gMale" type="radio" name="gender" value="Male"> Male</label></li>
                         <li><label><input id="gFemale" type="radio" name="gender" value="Female"> Female</label></li>
-                        <li><button type="submit" name="gender" value="">Clear</button><input type="submit" value="Go"></li>
+                        <li><button type="submit" name="gender" value="">Clear</button> <input type="submit" value="Go"></li>
                     </ul>
                     <ul class="list-unstyled components">
                         <h5>Age</h5>
@@ -174,7 +186,7 @@
                         <li><label><input id="qUniversity" type="radio" name="qualification" value="University"> University</label></li>
                         <li><label><input id="qTeacher" type="radio" name="qualification" value="Teacher"> Teacher</label></li>
                         <li><label><input id="qOther" type="radio" name="qualification" value="Other"> Other</label></li>
-						<li><button type="submit" name="qualification" value="">Clear</button><input type="submit" value="Go"></li>
+						<li><button type="submit" name="qualification" value="">Clear</button> <input type="submit" value="Go"></li>
                     </ul>
                     <ul class="list-unstyled components">
                         <h5>Avaliability</h5>

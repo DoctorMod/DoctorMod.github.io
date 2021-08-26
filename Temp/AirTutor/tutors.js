@@ -14,7 +14,8 @@ var users = [{
             display: "Friday-Sunday",
             value: ["Friday", "Saturday", "Sunday"]
         },
-		area: "Noranda"
+		area: "Noranda",
+		email: "bigshaq@example.com"
     },
     {
         image: "Maya.jpg",
@@ -32,7 +33,8 @@ var users = [{
             display: "Monday-Wednesday, Friday",
             value: ["Monday", "Tuesday", "Wednesday", "Friday"]
         },
-		area: "Online"
+		area: "Online",
+		email: "MayaPatel@example.com"
     },
     {
         image: "James.jpg",
@@ -50,7 +52,8 @@ var users = [{
             display: "Saturday-Sunday",
             value: ["Saturday", "Sunday"]
         },
-		area: "Yokine"
+		area: "Yokine",
+		email: "JamesCarter@example.com"
     },
     {
         image: "Liz.jpg",
@@ -68,6 +71,31 @@ var users = [{
             display: "Monday-Tuesday, Friday-Saturday",
             value: ["Monday", "Tuesday", "Friday", "Saturday"]
         },
-		area: "Dianella"
+		area: "Dianella",
+		email: "lizchan@example.com"
     }
 ]
+/*
+
+
+format = {
+	image: 'IMAGENAME',
+	name : {
+		first: "FIRSTNAME",
+		last: "LASTNAME"
+	},
+	gender: "GENDER",
+	age: age,
+	year: schoolyear,
+	subject: ["Subject1","Subject2"],
+	qualification: "qualification",
+	drive: true/false,
+	availability: {
+            display: "How the availability is displayed to the viewer",
+            value: ["Day","Day","Day"]
+        },
+	area: "SUBURB",
+	email: "EMAIL"
+}
+
+*/
