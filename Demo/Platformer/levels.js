@@ -293,7 +293,7 @@ TempLevel.push(new platform(-2, 620, 108, 48, 'floor'));
 TempLevel.push(new platform(106, 264, 48, 236, 'floor'));
 TempLevel.push(new platform(106, 188, 538, 40, 'floor'));
 TempLevel.push(new platform(586, 260, 70, 228, 'floor'));
-TempLevel.push(new platform(732, 668, 230, 72, 'floor'));
+TempLevel.push(new platform(732, 800, 230, 72, 'floor'));
 TempLevel.push(new circlePlatform(922, 392, 30, 'goal'));
 TempLevel.push(new platform(106, 228, 548, 34, 'death'));
 TempLevel.push(new platform(644, 188, 10, 44, 'death'));
