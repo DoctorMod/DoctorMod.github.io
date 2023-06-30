@@ -50,19 +50,25 @@ function prettify(input) {
 
 var songs = []
 var songNames = [
-    "niggun",
+    "niggun1",
     "yedid",
-    "mayamganim",
-    "dodinetzeh",
+    "mizmorshir",
     "kolainu",
     "arbaim",
     "yismechu",
-    "yaaloz",
-    "harim",
     "emek",
     "ayalah",
     "lechadodi1",
-    "lechadodi2"
+    "naaseh",
+    "niggun2",
+    "acheinu",
+    "mayamganim",
+    "lechadodi2",
+    "dodinetzeh",
+    "harim",
+    "yaaloz",
+    "olam",
+    "niggun3"
 ];
 
 for (let i = 0; i < songNames.length; i++) {
