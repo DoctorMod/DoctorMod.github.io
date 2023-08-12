@@ -66,6 +66,7 @@ var songNames = [
     "lechadodi2",
     "dodinetzeh",
     "harim",
+    "yiram",
     "yaaloz",
     "olam",
     "niggun3"
