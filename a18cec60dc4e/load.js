@@ -122,7 +122,16 @@ $(document).ready(function(){
                 transpose();
                 }
         });
-    
+        
+        $('.custom-edit').click(function(e){
+            chordElement = document.createElement("div")
+            customChordList = document.getElementById("customChordList").value;
+            rawChordElement = '<h1>Custom Chords</h1>\n<pre class="song">\n'+customChordList+'\n</pre>';
+            chordElement.innerHTML = prettify(rawChordElement);
+            console.log(rawChordElement);
+            document.getElementById('songlist').prepend(chordElement);
+        });
+
     $('#quantity').on("update",transpose);
     $('#quantity').val(0);
     });
