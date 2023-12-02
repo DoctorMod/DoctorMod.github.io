@@ -64,12 +64,14 @@ var songNames = [
     "acheinu",
     "mayamganim",
     "lechadodi2",
+    "levtahor",
     "dodinetzeh",
     "harim",
     "yiram",
     "yaaloz",
     "olam",
-    "niggun3"
+    "niggun3",
+    "anaelna"
 ];
 
 for (let i = 0; i < songNames.length; i++) {
@@ -79,7 +81,7 @@ for (let i = 0; i < songNames.length; i++) {
 var startupLoop = setInterval(function() {
     if (songs.length == songNames.length) {
         songs.forEach(element => {
-            document.getElementById('songlist').appendChild(element);        
+            document.getElementById('songlist').appendChild(element);
         });
         chords.sort();
         clearInterval(startupLoop);
