@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wow So Cool!</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="sparkle.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/sparkle.js"></script>
 </head>
 <body>
     
@@ -34,39 +34,24 @@
             <h2>Hi there!</h2>
             <h3>Other Tools</h3>
             <ul>
-                <li><a href="https://github.com/DoctorMod/redflags" target="_blank">Red Flags</a></li>
-                <li><a href="https://github.com/DoctorMod/essai" target="_blank">Essai</a></li>
+              <li><a href="https://github.com/DoctorMod/redflags" target="_blank">Red Flags</a></li>
+              <li><a href="https://github.com/DoctorMod/essai" target="_blank">Essai</a></li>
             </ul>
         </aside>
         <main>
-            <h1><img class="header" alt="Doctor Mod" src="img/header.png"></h1>
+            <h1><img class="header" alt="Doctor Mod" src="/img/header.png"></h1>
             <hr/>
-            <p><strong>hi this is my personal website!</strong>
-                <ul>
-                    <li>any pronouns</li>
-                    <li>idiot</li>
-                    <li>computer wizard</li>
-                    <li>and all-around <span class="rainbow">freak</span></li>
-                </ul>
-            </p>
-            <p>I really like to mess around with stupid programming stuff, but also I sometimes make some fun games or whatever!</p>
-            <p>If you want to go check out any of the random things i spend my time making feel free to check out my <a href="https://github.com/DoctorMod" target="_blank">Github</a>. No promises that I'm actually doing anything of note right now, but like the point stands, go check it out lol.</p>
-            <p>If you're feeling up for it, feel free to go rummage around here, there is probably something that will catch your interest on this site anyway. </p>
-            <p>Check the links in the sidebar to go look at something cool!</p>
+            <h2>Coming Soon!</h2>
+            
+            <br/>
 
-            <p> - More serious things? - </p>
-            <p>I don't know if this is actually more serious but if you are interested in contacting me, feel free to at <a href="mailto:doctormod10@gmail.com">doctormod10@gmail.com</a>. I promise i do actually know how to code properly, I just like this asthetic.</p>
-            <p>Anyway, I hope you have a great day!</p>
+            <div class="stripe"></div>
 
-            <p> - Fun things - </p>
-            <p>Here are some fun things you can do:</p>
-            <ul>
-                <li>go outside</li>
-                <li>touch grass</li>
-                <li>look at sun</li>
-            </ul>
+            <p style="text-align: center;">Wow! So cool! This page is under construction! Check back later for more updates!</p>
+             
+            <div class="stripe"></div>
 
-
+            <div style="text-align: center;"><img src="/img/butterflycluster.gif"></div>
         </main>
         
     </div>
@@ -90,5 +75,19 @@
     // this script is for the year in the footer
     document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
+<style>
+    .stripe {
+        margin: 1em 2em;
+        height: 1em;
+        background: linear-gradient(90deg,#e9a456,#e9a456 30px,#46465c 30px,#46465c 60px) 25.4275px 0px / 60px 100%;
+        background-size: 60px 100%;
+        background-position: 0px 0px;
+        will-change: background-position;
+        animation: 2s linear infinite scroll-stripe;
+        transform: skew(-45deg) scale(1.02);
+    }
+</style>
+
+
 </body>
 </html>
