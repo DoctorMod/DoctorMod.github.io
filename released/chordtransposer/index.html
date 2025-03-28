@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Kab Shab - Web</title>
     <style>
-        textarea, pre, h1, h5 {
-            font-family: 'Cousine', monospace;
-        }
         pre {
-            text-align: right;
+            font-family: "Roboto Mono", Courier New, monospace
         }
         h1 {
             word-break: break-all;
+            font-size: 1.5rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+        }
+        h3 {
+            font-size: 1rem;
         }
         .margin {
             margin-top: 10vh;
@@ -28,19 +32,35 @@
             text-align: center;
         }
         .chord {
-            color: #77dd77;
+            font-weight: 800;
+            /* background-color: #aaaaaa20; */
+            border-radius: 2px;
         }
         #songlist {
             margin-top: 2.5rem;
         }
+
+        #songlist div h1 a {
+            color: silver;
+            text-decoration: none;
+        }
+
+        #songlist div h1 a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="fixed-top jumbotron text-center bg-light p-3">
-        <h1 style="font-size: 1.5rem;">Kabalat Shabbat Songs
+    <div id="banner" class="fixed-top jumbotron text-center bg-light p-3">
+        <input type="button" value="&times;" onclick="$('#banner').hide();$('.margin').css('margin-top','0');" class="btn btn-danger float-end">
+        <h1 style="font-size: 1.5rem;">
+            Kabalat Shabbat Songs
             <span class="input-group-btn text-right">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chordModal">
                     <i class="bi-pencil-square"></i>
+                </button>
+                <button type="button" class="simplify-chords btn btn-secondary" data-type="simplify">
+                    <i class="bi-capslock-fill"></i>
                 </button>
             </span>
         </h1>

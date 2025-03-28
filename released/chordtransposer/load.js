@@ -1,15 +1,6 @@
-function loadfile(filename,index) {
-    console.log(`Loading ${filename}.`);
-    var fileref = document.createElement('div');
-    fetch(filename).then((res) => res.text()).then((song) => {
-        fileref.innerHTML = prettify(song);
-        songs[index] = fileref;
-        console.log(`Loaded ${filename}.`);
-    })
-    .catch((e) => console.error(e));
-}
+var chords = ["A#","A","B","C#","C","D#","D","E","F#","F","G#","G"];
 
-var chords = ["A#","A ","B ","C#","C ","D#","D ","E ","F#","F ","G#","G "];
+var simplify = false;
 
 function transpose() {
     chords.sort();
@@ -19,119 +10,144 @@ function transpose() {
         currentLetter = document.getElementsByClassName(chords[i]);
         for (let j = 0; j < currentLetter.length; j++) {
             const element = currentLetter[j];
-            element.innerText = modifyChords[i+12+newtranspose];   
-        }
-    }
-}
-
-function prettify(input) {
-
-    var songList = input.replace(/\[.*?\]/g, "").split(/\r?\n/).filter(n => n);
-
-    var songStart = -1;
-
-    for (let i = 0; i < songList.length; i++) {
-        var element = songList[i] + " ";
-        if (songStart == -1) {
-            if (element == '<pre class="song"> ') {songStart = i - 1;}    
-        } else {
-            if ((songStart - i) % 2 == 0) {
-                for (let j = 0; j < chords.length; j++) {
-                    element = element.replaceAll(chords[j],`<span class='${chords[j]} chord'>${chords[j]}</span>`);
-                }
+            extraStuff = element.getAttribute("extraStuff");
+            if (extraStuff.substr(-1) == " " && modifyChords[i+12+newtranspose].includes('#')) {
+                extraStuff = extraStuff.slice(0,-1);
             }
+            if (simplify) {
+                extraStuff = "".padStart(extraStuff.length);
+            }
+            element.innerText = modifyChords[i+12+newtranspose] + extraStuff;   
         }
-        songList[i] = element;
     }
-    
-    output = songList.join("<br/>");
-    return output;
 }
 
-var songs = []
-var songNames = [
-    "niggun1",
-    "yedid",
-    "mizmorshir",
-    "kolainu",
-    "arbaim",
-    "yismechu",
-    "emek",
-    "ayalah",
-    "lechadodi1",
-    "naaseh",
-    "niggun2",
-    "acheinu",
-    "mayamganim",
-    "lechadodi2",
-    "levtahor",
-    "dodinetzeh",
-    "harim",
-    "yiram",
-    "yaaloz",
-    "olam",
-    "niggun3",
-    "anaelna"
-];
+function prettify(htmlSource) {
+    var [title, author, capo] = htmlSource.split('\n').slice(0,3);
+    var content = htmlSource.split('\n').slice(4).join('\n');
 
-for (let i = 0; i < songNames.length; i++) {
-    loadfile(`songs/${songNames[i]}.html`,i);
-} 
+    var wrapper = document.createElement('div');
 
-var startupLoop = setInterval(function() {
-    if (songs.length == songNames.length) {
-        songs.forEach(element => {
-            document.getElementById('songlist').appendChild(element);
-        });
-        chords.sort();
-        clearInterval(startupLoop);
+    titleElem = document.createElement('h1');
+    titleElem.appendChild(document.createElement('a'));
+    titleText = title.split('](')[0].slice(1);
+    titleHref = title.split('](')[1].slice(0,-2);
+    titleElem.children[0].innerText = titleText;
+    titleElem.children[0].href = titleHref;
+    wrapper.appendChild(titleElem);
+
+    authorElem = document.createElement('h2');
+    authorElem.innerText = author;
+    wrapper.appendChild(authorElem);
+
+    capoElem = document.createElement('h3');
+    capoElem.appendChild(document.createElement('a'));
+    capoElem.children[0].innerText = capo;
+    capoElem.children[0].href = '#';
+    capoElem.children[0].classList.add('capo');
+    capoElem.addEventListener('click', function(e) {   
+
+        e.preventDefault();
+
+        capoText = e.target.innerText;
+
+        if (capoText == "No Capo\n") {
+            $('#quantity').val(0);
+        } else {
+            var currentCapo = parseInt(capoText.slice(5));
+            $('#quantity').val(currentCapo);
+        }
+
+
+        transpose();
+    });
+    wrapper.appendChild(capoElem);
+
+    content = content.replace(/\[ch\]/g, '<span class="chord">');
+    content = content.replace(/\[\/ch\] /g, ' </span>');
+    content = content.replace(/\[\/ch\]/g, '</span>');
+
+    contentElem = document.createElement('pre');
+    contentElem.innerHTML = content;
+    contentElem = chordEdit(contentElem);
+    wrapper.appendChild(contentElem);
+
+    return wrapper;
+}
+
+
+function chordEdit(contentElem) {
+    var chords = contentElem.getElementsByClassName('chord');
+    for (let i = 0; i < chords.length; i++) {
+        const chord = chords[i];
+        if (chord.innerText[1] == '#') {
+            chord.classList.add(chord.innerText.slice(0,2));
+            extraStuff = chord.innerText.slice(2);
+        } else {
+            chord.classList.add(chord.innerText[0]);
+            extraStuff = chord.innerText.slice(1);
+        }
+        chord.setAttribute("extraStuff",extraStuff);
     }
-},50);
-
+    return contentElem;
+}
 
 $(document).ready(function(){
 
-    var quantitiy=0;
-       $('.quantity-right-plus').click(function(e){
-            
-            // Stop acting like a button
-            e.preventDefault();
-            // Get the field name
-            var quantity = parseInt($('#quantity').val());
-            
-            // If is not undefined
-            if(quantity<12){
-                $('#quantity').val(quantity + 1);
-                transpose();
-            }              
-                // Increment
-            
-        });
-    
-         $('.quantity-left-minus').click(function(e){
-            // Stop acting like a button
-            e.preventDefault();
-            // Get the field name
-            var quantity = parseInt($('#quantity').val());
-            
-            // If is not undefined
-          
-                // Decrement
-                if(quantity>-12){
-                $('#quantity').val(quantity - 1);
-                transpose();
-                }
-        });
-        
-        $('.custom-edit').click(function(e){
-            chordElement = document.createElement("div")
-            customChordList = document.getElementById("customChordList").value;
-            rawChordElement = '<h1>Custom Chords</h1>\n<pre class="song">\n'+customChordList+'\n</pre>';
-            chordElement.innerHTML = prettify(rawChordElement);
-            console.log(rawChordElement);
-            document.getElementById('songlist').prepend(chordElement);
-        });
+    fetch('fullsongs.md').then((res) => res.text()).then((song) => {
+        songlist = song.split('---\r\n');
+        songlist.forEach(element => {
+            document.getElementById('songlist').appendChild(prettify(element));          
+        }); 
+    })
+    .catch((e) => console.error(e));
 
-    $('#quantity').on("update",transpose);
-    $('#quantity').val(0);
+    $('.quantity-right-plus').click(function(e){
+        
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+        if(quantity<12){
+            $('#quantity').val(quantity + 1);
+            transpose();
+        }              
+            // Increment
+        
     });
+
+        $('.quantity-left-minus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+        
+            // Decrement
+            if(quantity>-12){
+            $('#quantity').val(quantity - 1);
+            transpose();
+            }
+    });
+
+    $('.simplify-chords').click(function(e){
+        
+        // Stop acting like a button
+        e.preventDefault();
+
+        //toggle icon state from -fill to '' or visa-versa
+        if ($('.simplify-chords i').hasClass('bi-capslock-fill')) {
+            simplify = true;
+            $('.simplify-chords i').removeClass('bi-capslock-fill');
+            $('.simplify-chords i').addClass('bi-capslock');
+        } else {
+            simplify = false;
+            $('.simplify-chords i').addClass('bi-capslock-fill');
+            $('.simplify-chords i').removeClass('bi-capslock');
+        }
+        transpose();
+    });
+});
