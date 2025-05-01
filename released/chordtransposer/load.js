@@ -95,10 +95,15 @@ function chordEdit(contentElem) {
 $(document).ready(function(){
 
     fetch('fullsongs.md').then((res) => res.text()).then((song) => {
-        songlist = song.split(/---(\r\n|\n|\r)/gm);
+        songlist = song.split(/---\r?\n/);
         songlist.forEach(element => {
-            document.getElementById('songlist').appendChild(prettify(element));          
-        }); 
+            if (element.trim() !== "") {
+                document.getElementById('songlist').appendChild(prettify(element));
+            }         
+        });
+        if (songlist.length !== document.getElementById('songlist').children.length) {
+            console.warn(`Warning: Number of songs in file (${songlist.length - 1}) does not match number of songs displayed (${document.getElementById('songlist').children.length}).`);
+        }
     })
     .catch((e) => console.error(e));
 
