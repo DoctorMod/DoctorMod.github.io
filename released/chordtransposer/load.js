@@ -95,7 +95,7 @@ function chordEdit(contentElem) {
 $(document).ready(function(){
 
     fetch('fullsongs.md').then((res) => res.text()).then((song) => {
-        songlist = song.split('---\r\n');
+        songlist = song.split(/---(\r\n|\n|\r)/gm);
         songlist.forEach(element => {
             document.getElementById('songlist').appendChild(prettify(element));          
         }); 
