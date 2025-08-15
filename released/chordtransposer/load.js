@@ -41,6 +41,7 @@ generateChord("E7", "020100");
 generateChord("Esus4", "022200");
 
 generateChord("F", "933299", "611");
+generateChord("Fm", "933999", "611");
 generateChord("Fmaj7", "933299", "611");
 
 generateChord("G", "320003");
