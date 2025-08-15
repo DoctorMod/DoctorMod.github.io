@@ -240,8 +240,10 @@ Yoel Sykes
 Capo 5
 
 [Chorus]
-    [ch]Am[/ch]     [ch]C[/ch]    [ch]F[/ch]      [ch]E[/ch]        [ch]Am[/ch]     [ch]C[/ch]  [ch]F[/ch]           [ch]E[/ch]
-Ya'aloz sadai v'khol asher bo yaloz sadai ay ya ya ya ya x2
+    [ch]Am[/ch]     [ch]C[/ch]    [ch]F[/ch]      [ch]E[/ch]        [ch]Am[/ch]     [ch]C[/ch]  
+Ya'aloz sadai v'khol asher bo yaloz sadai 
+[ch]F[/ch]           [ch]E[/ch]
+ay ya ya ya ya x2
 [ch]Dm[/ch]                 [ch]E[/ch]
 Az y'ranenu kol atsay ya'ar
 [ch]F[/ch]                  [ch]E[/ch]
@@ -361,7 +363,7 @@ Navot
 Capo 3
 
 [Verse]
-[ch]Am[/ch]      [ch]Dm[/ch]     [ch]Em[/ch]      [ch]Am[/ch]
+        [ch]Dm[/ch]     [ch]Em[/ch]      [ch]Am[/ch]
 Lecha dodi netzeh hasodeh
 [ch]Em[/ch]            [ch]F[/ch]     [ch]Em[/ch]         [ch]Am[/ch]
 Nalina bʼkfarim Nashkima, lacramim
@@ -382,17 +384,17 @@ Sham eten et-dodai, lach
 Yoel Sykes
 No Capo
 
-Am      G Dm         Am           G    Dm    Am
+[ch]Am[/ch]      [ch]G[/ch] [ch]Dm[/ch]         [ch]Am[/ch]           [ch]G[/ch]    [ch]Dm[/ch]    [ch]Am[/ch]
 L'cha dodi likrat kallah p'nei Shabbat n'kab'lah
-Am      G Dm         Am           G    Dm G  Am
+[ch]Am[/ch]      [ch]G[/ch] [ch]Dm[/ch]         [ch]Am[/ch]           [ch]G[/ch]    [ch]Dm[/ch] [ch]G[/ch]  [ch]Am[/ch]
 L'cha dodi likrat kallah p'nei Shabbat n'kab'lah
-F           G             Am
+[ch]F[/ch]           [ch]G[/ch]             [ch]Am[/ch]
 Shamor v' Zachor b'dibur echad
-F       G             Am
+[ch]F[/ch]       [ch]G[/ch]             [ch]Am[/ch]
 Hish'mi'anu El ha'm'yuchad
-F       G             C E7 Am
+[ch]F[/ch]       [ch]G[/ch]             [ch]C[/ch] [ch]E7[/ch] [ch]Am[/ch]
 Adonai echad u'sho'mo echad
-  F         G              A
+  [ch]F[/ch]         [ch]G[/ch]              [ch]A[/ch]
 L'shem u'ltiferet v'li't'hilah
 
 ---
@@ -401,9 +403,9 @@ Yoel Sykes & Daphna Rosenberg
 Capo 3
 
 [Chorus]
-[ch]A[/ch]     [ch]C[/ch]       [ch]D[/ch]        [ch]FM[/ch]     [ch]Am[/ch]     [ch]C[/ch]     [ch]Em[/ch]     
+[ch]A[/ch]     [ch]C[/ch]       [ch]D[/ch]        [ch]Fmaj7[/ch]  [ch]Am[/ch]     [ch]C[/ch]     [ch]Em[/ch]
 Lev tahor, shochen ba’ahava, shochen lev tahor
-  [ch]F[/ch] [ch]C[/ch] [ch]EM[/ch]  [ch]F[/ch]       [ch]C[/ch]     [ch]Bm[/ch]        [ch]Esus4[/ch] [ch]E[/ch]
+  [ch]F[/ch] [ch]C[/ch] [ch]Em[/ch]  [ch]F[/ch]       [ch]C[/ch]     [ch]Bm[/ch]        [ch]Esus4[/ch] [ch]E[/ch]
 v’ru--ach nachon, yesh, yesh b’kirbi.
 
 ---
